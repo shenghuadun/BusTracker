@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    xmlns:adsmogo="http://www.adsmogo.com"
+    xmlns:baiduadsdk="http://schemas.android.com/apk/res/com.gigi.bustracker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="芒果" />
+    <com.gigi.av.GigiLayout
+        android:id="@id/adsMogoView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        adsmogo:appid="95645d068efe4d55854960e0d10f3978"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="百度" />
+	<com.baidu.mobads.AdView 
+	    android:id="@+id/adView"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"  
+		baiduadsdk:adSize="0"
+		baiduadsdk:adId = ""  />
+	 	<!--注： baiduadsdk:adId可以指定为"",表示默认广告位-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="多盟" />
+	<RelativeLayout 
+	    android:id="@+id/duomengContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+	    
+	</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="底部" />
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+       	android:id="@+id/iconContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="12dp"
+        android:layout_centerVertical="true">
+	    <ImageView
+	        android:id="@+id/icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="6dp"
+	        android:src="@drawable/notify_icon" />
+	    
+	    <TextView
+	        android:id="@+id/lineId"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:layout_centerHorizontal="true"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="3dp"
+	        android:text="110路" />
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/position1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/iconContainer"
+        android:layout_toLeftOf="@+id/stationInfo"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+	    <TextView
+	        android:id="@+id/pos1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical"
+	        android:lines="1"
+	        android:text="TextView" />
+	    
+	    <TextView
+	        android:id="@+id/pos2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical"
+	        android:lines="1"
+	        android:text="TextView" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@id/stationInfo"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true">
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:padding="4dp">
+		    <TextView
+		        android:id="@+id/time"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:gravity="center"
+		        android:textSize="14dp" 
+		        android:background="#009900"
+		        android:textColor="#fff"
+		        android:text="12:35" />
+	    </LinearLayout>
+
+	    <TextView
+	        android:id="@+id/stationName"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:layout_marginRight="2dp"
+	        android:textSize="10dp" 
+	        android:text="第一海水浴场" />
+    </LinearLayout>
+    
+</RelativeLayout>
